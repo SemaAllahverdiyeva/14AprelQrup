@@ -11,7 +11,7 @@ public class HomeWork {
 		char studentGrade = 'C';
 		System.out.println("studentGrade: " + studentGrade);
 		
-		int carPrice = 250000;
+		double carPrice = 250000;
 		System.out.println("carPrice: " + carPrice);
 		
 		String employeeName = "Məlik";
