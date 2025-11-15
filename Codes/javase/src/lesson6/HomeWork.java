@@ -65,5 +65,6 @@ public class HomeWork {
 		}
 		System.out.println(sum4);
 		
+		sc.close();
 	}
 }
