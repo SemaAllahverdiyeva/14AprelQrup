@@ -1,0 +1,4 @@
+2026-05-27 14:28:39.033 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 13472 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
+2026-05-27 14:28:39.044 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-27 14:28:39.310 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-27 14:28:43.409 INFO  a.d.s.SpringProject14AprelApplication - Started SpringProject14AprelApplication in 5.85 seconds (process running for 6.989)

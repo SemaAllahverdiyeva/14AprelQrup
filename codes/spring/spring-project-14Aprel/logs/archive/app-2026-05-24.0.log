@@ -1,0 +1,12 @@
+2026-05-24 12:46:47.250 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 15568 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
+2026-05-24 12:46:47.260 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-05-24 12:46:47.387 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-05-24 12:46:47.389 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-05-24 12:46:49.609 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 1608 (http)
+2026-05-24 12:46:49.634 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1608"]
+2026-05-24 12:46:49.639 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-05-24 12:46:49.639 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-05-24 12:46:49.723 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2330 ms
+2026-05-24 12:46:50.711 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1608"]
+2026-05-24 12:46:50.762 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 1608 (http) with context path '/'
+2026-05-24 12:46:50.778 INFO  a.d.s.SpringProject14AprelApplication - Started SpringProject14AprelApplication in 4.825 seconds (process running for 5.835)
