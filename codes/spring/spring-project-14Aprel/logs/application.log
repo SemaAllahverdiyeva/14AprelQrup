@@ -1,4 +1,83 @@
-2026-05-27 14:28:39.033 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 13472 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
-2026-05-27 14:28:39.044 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
-2026-05-27 14:28:39.310 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-05-27 14:28:43.409 INFO  a.d.s.SpringProject14AprelApplication - Started SpringProject14AprelApplication in 5.85 seconds (process running for 6.989)
+2026-06-04 19:27:55.363 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 13264 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
+2026-06-04 19:27:55.379 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-04 19:27:55.568 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-04 19:27:55.569 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-04 19:27:58.101 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 1608 (http)
+2026-06-04 19:27:58.146 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1608"]
+2026-06-04 19:27:58.153 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-04 19:27:58.153 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-04 19:27:58.290 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2715 ms
+2026-06-04 19:27:59.478 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1608"]
+2026-06-04 19:27:59.540 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 1608 (http) with context path '/'
+2026-06-04 19:27:59.554 INFO  a.d.s.SpringProject14AprelApplication - Started SpringProject14AprelApplication in 6.012 seconds (process running for 9.029)
+2026-06-08 18:49:33.553 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 4708 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
+2026-06-08 18:49:33.609 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 18:49:33.586 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 1300 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
+2026-06-08 18:49:33.623 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 18:49:38.111 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 1608 (http)
+2026-06-08 18:49:38.111 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 1608 (http)
+2026-06-08 18:49:38.148 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1608"]
+2026-06-08 18:49:38.148 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-1608"]
+2026-06-08 18:49:38.156 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 18:49:38.157 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-08 18:49:38.157 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 18:49:38.158 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-08 18:49:38.752 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4637 ms
+2026-06-08 18:49:38.755 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 4653 ms
+2026-06-08 18:49:39.831 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1608"]
+2026-06-08 18:49:39.833 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-1608"]
+2026-06-08 18:49:39.857 WARN  o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-06-08 18:49:39.882 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-06-08 18:49:39.887 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 1608 (http) with context path '/'
+2026-06-08 18:49:39.900 INFO  a.d.s.SpringProject14AprelApplication - Started SpringProject14AprelApplication in 7.603 seconds (process running for 8.233)
+2026-06-08 18:49:39.910 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 1608 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 1608 or configure this application to listen on another port.
+
+2026-06-08 18:50:29.274 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 13496 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
+2026-06-08 18:50:29.281 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 18:50:31.470 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 816 (http)
+2026-06-08 18:50:31.497 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-816"]
+2026-06-08 18:50:31.510 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 18:50:31.512 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-08 18:50:31.637 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2233 ms
+2026-06-08 18:50:32.434 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-816"]
+2026-06-08 18:50:32.484 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 816 (http) with context path '/'
+2026-06-08 18:50:32.499 INFO  a.d.s.SpringProject14AprelApplication - Started SpringProject14AprelApplication in 4.302 seconds (process running for 4.996)
+2026-06-08 18:52:08.762 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-08 18:52:08.769 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-08 18:52:08.789 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2026-06-08 18:52:09.258 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-06-08 18:52:56.339 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-06-08 18:53:04.094 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-06-08 18:53:22.714 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 7876 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
+2026-06-08 18:53:22.722 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-08 18:53:25.465 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8016 (http)
+2026-06-08 18:53:25.519 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8016"]
+2026-06-08 18:53:25.529 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-08 18:53:25.531 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-08 18:53:25.742 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2902 ms
+2026-06-08 18:53:27.865 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8016"]
+2026-06-08 18:53:28.013 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8016 (http) with context path '/'
+2026-06-08 18:53:28.062 INFO  a.d.s.SpringProject14AprelApplication - Started SpringProject14AprelApplication in 6.54 seconds (process running for 7.338)
+2026-06-08 18:53:33.361 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-08 18:53:33.362 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-08 18:53:33.367 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-06-08 18:53:33.465 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-06-08 18:53:51.609 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-08 18:53:53.195 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d955fa2
+2026-06-08 18:53:53.207 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-08 18:56:59.288 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-06-08 18:58:00.672 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
