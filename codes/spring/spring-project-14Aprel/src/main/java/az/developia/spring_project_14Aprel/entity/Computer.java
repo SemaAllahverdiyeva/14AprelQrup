@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 @Getter
 public class Computer {
-	private int id;
+	private Integer id;
 	private String brand;
 	private String model;
 }
