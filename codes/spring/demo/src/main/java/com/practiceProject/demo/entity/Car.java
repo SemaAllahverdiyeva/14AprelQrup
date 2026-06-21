@@ -1,4 +1,4 @@
-package az.developia.spring_project_14Aprel.entity;
+package com.practiceProject.demo.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,14 +15,11 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name= "cars")
+public class Car {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String name;
-	private String surname;
-	private String username;
-	private String password;
-	private String email;
+	private Integer year;
 }

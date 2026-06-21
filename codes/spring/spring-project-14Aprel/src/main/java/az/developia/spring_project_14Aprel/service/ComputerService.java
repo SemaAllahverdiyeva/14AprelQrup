@@ -7,41 +7,50 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import az.developia.spring_project_14Aprel.entity.Computer;
-import az.developia.spring_project_14Aprel.repository.ComputerRepository;
+import az.developia.spring_project_14Aprel.repository.ComputerRepo;
 
 @Service
 public class ComputerService {
 
 	@Autowired
-	private ComputerRepository computerRepository;
+	private ComputerRepo computerRepo;
 
 	public List<Computer> getComputers(String brand) {
-		return computerRepository.getComputers(brand);
+		List<Computer> computers = computerRepo.findAll();
+
+		return computers;
 	}
 
 	public Optional<Computer> getComputerById(int id) {
-		return computerRepository.getComputerById(id);
+		return computerRepo.findById(id);
 	}
 
 	public void addComputer(Computer computer) {
-		computerRepository.addComputer(computer);
+		computerRepo.save(computer);
 	}
 
 	public void deleteComputer(int id) {
-		computerRepository.deleteComputer(id);
+		computerRepo.deleteById(id);
 	}
 
 	public String updateComputer(Computer computer) {
-		if(computer.getId() == null || computer.getId() <= 0) {
-			throw new IllegalArgumentException("id must not be or lest and zero");
+		if (computer.getId() == null || computer.getId() <= 0) {
+			throw new IllegalArgumentException("id must not be null or less than zero");
 		}
-		
-		Optional<Computer> computerById = computerRepository.getComputerById(computer.getId());
+
+		Optional<Computer> computerById = computerRepo.findById(computer.getId());
+
 		if (computerById.isPresent()) {
-			computerRepository.update(computer);
+			computerRepo.save(computer);
+
 		} else {
 			throw new IllegalArgumentException("id not found");
 		}
-		return "Computer updated succesfully";
+
+		return "Computer updated successfully";
+	}
+	
+	public List<Computer> getComputerByBrand(String brand) {
+		return computerRepo.findBybrandContanting(brand);
 	}
 }

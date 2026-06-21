@@ -33,8 +33,7 @@ public class ComputerController {
 	private ComputerService computerService;
 
 	@GetMapping("/getComputers")
-	public List<Computer> getComputers(
-			@RequestParam(required = false) String brand) {
+	public List<Computer> getComputers(@RequestParam(required = false) String brand) {
 		return computerService.getComputers(brand);
 	}
 
@@ -54,9 +53,14 @@ public class ComputerController {
 		computerService.deleteComputer(id);
 		return "Computer deleted successfully";
 	}
-	
+
 	@PutMapping(path = "/update")
 	public String updateComputer(@RequestBody Computer computer) {
 		return computerService.updateComputer(computer);
+	}
+
+	@GetMapping(path = "getComputerByBrand")
+	public List<Computer> getComputerByBrand(@RequestParam(name = "brand") String brand) {
+		return computerService.getComputers(brand);
 	}
 }
