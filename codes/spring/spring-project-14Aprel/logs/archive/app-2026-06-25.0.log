@@ -1,0 +1,99 @@
+2026-06-25 20:01:19.080 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 4640 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
+2026-06-25 20:01:19.093 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-25 20:01:20.801 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-25 20:01:20.944 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 119 ms. Found 2 JPA repository interfaces.
+2026-06-25 20:01:22.325 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8008 (http)
+2026-06-25 20:01:22.353 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8008"]
+2026-06-25 20:01:22.361 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-25 20:01:22.362 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-25 20:01:22.750 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 3478 ms
+2026-06-25 20:01:23.207 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-25 20:01:23.380 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-25 20:01:24.443 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-25 20:01:24.552 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-25 20:01:25.632 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3909a854
+2026-06-25 20:01:25.637 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-25 20:01:25.839 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/car_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: car_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-25 20:01:28.476 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-25 20:01:31.380 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-25 20:01:31.663 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-25 20:01:32.541 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-25 20:01:33.214 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8008"]
+2026-06-25 20:01:33.268 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8008 (http) with context path '/'
+2026-06-25 20:01:33.280 INFO  a.d.s.SpringProject14AprelApplication - Started SpringProject14AprelApplication in 16.02 seconds (process running for 17.575)
+2026-06-25 20:01:53.595 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 16048 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
+2026-06-25 20:01:53.599 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-25 20:01:54.678 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-25 20:01:54.768 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2026-06-25 20:01:55.505 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8008 (http)
+2026-06-25 20:01:55.528 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8008"]
+2026-06-25 20:01:55.538 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-25 20:01:55.538 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-25 20:01:55.645 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1951 ms
+2026-06-25 20:01:55.917 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-25 20:01:55.993 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-25 20:01:56.605 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-25 20:01:56.664 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-25 20:01:57.220 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d1c63af
+2026-06-25 20:01:57.223 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-25 20:01:57.369 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/car_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: car_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-25 20:01:58.284 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-25 20:01:58.364 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-25 20:01:58.488 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-25 20:01:58.858 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-25 20:01:59.562 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8008"]
+2026-06-25 20:01:59.662 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8008 (http) with context path '/'
+2026-06-25 20:01:59.706 INFO  a.d.s.SpringProject14AprelApplication - Started SpringProject14AprelApplication in 6.83 seconds (process running for 7.48)
+2026-06-25 20:02:33.663 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-25 20:02:33.664 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-06-25 20:02:33.668 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-06-25 21:58:46.529 INFO  a.d.s.SpringProject14AprelApplication - Starting SpringProject14AprelApplication using Java 21.0.11 with PID 14296 (C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel\target\classes started by talla in C:\GitHub\14AprelQrup\codes\spring\spring-project-14Aprel)
+2026-06-25 21:58:46.557 INFO  a.d.s.SpringProject14AprelApplication - No active profile set, falling back to 1 default profile: "default"
+2026-06-25 21:58:49.412 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-25 21:58:49.527 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 2 JPA repository interfaces.
+2026-06-25 21:58:53.657 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8008 (http)
+2026-06-25 21:58:53.798 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8008"]
+2026-06-25 21:58:53.842 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-06-25 21:58:53.843 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-06-25 21:58:54.287 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 7478 ms
+2026-06-25 21:58:55.675 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-06-25 21:58:56.018 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-06-25 21:58:59.136 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-25 21:58:59.359 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-06-25 21:59:01.512 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2095c331
+2026-06-25 21:59:01.523 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-06-25 21:59:02.015 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/car_db]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: car_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-25 21:59:05.556 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)

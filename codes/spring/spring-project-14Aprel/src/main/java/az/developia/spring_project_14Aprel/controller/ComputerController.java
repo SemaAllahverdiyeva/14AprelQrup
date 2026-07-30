@@ -1,27 +1,16 @@
 package az.developia.spring_project_14Aprel.controller;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.ArrayList;
+import java.nio.file.Paths;
 import java.util.List;
-import java.util.Optional;
-
-import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
-import az.developia.spring_project_14Aprel.entity.Computer;
+import az.developia.spring_project_14Aprel.requestDto.ComputerRequestDto;
+import az.developia.spring_project_14Aprel.responseDto.ComputerResponseDto;
 import az.developia.spring_project_14Aprel.service.ComputerService;
 
 @RestController
@@ -33,18 +22,19 @@ public class ComputerController {
 	private ComputerService computerService;
 
 	@GetMapping("/getComputers")
-	public List<Computer> getComputers(@RequestParam(required = false) String brand) {
+	public List<ComputerResponseDto> getComputers(@RequestParam(required = false) String brand) {
 		return computerService.getComputers(brand);
 	}
 
-	@GetMapping("/getComputer/{id}")
-	public Optional<Computer> getComputer(@PathVariable int id) {
+	@GetMapping(value = "/getComputer/{id}", produces = { "application/json", "application/xml" })
+	@Cacheable(value = "computer")
+	public ComputerResponseDto getComputer(@PathVariable int id) {
 		return computerService.getComputerById(id);
 	}
 
 	@PostMapping("/addComputer")
-	public String addComputer(@RequestBody Computer computer) {
-		computerService.addComputer(computer);
+	public String addComputer(@RequestBody ComputerRequestDto dto) {
+		computerService.addComputer(dto);
 		return "Computer added successfully";
 	}
 
@@ -54,13 +44,24 @@ public class ComputerController {
 		return "Computer deleted successfully";
 	}
 
-	@PutMapping(path = "/update")
-	public String updateComputer(@RequestBody Computer computer) {
-		return computerService.updateComputer(computer);
+	@PutMapping("/update")
+	public String updateComputer(@RequestBody ComputerRequestDto dto) {
+		return computerService.updateComputer(dto);
 	}
 
-	@GetMapping(path = "getComputerByBrand")
-	public List<Computer> getComputerByBrand(@RequestParam(name = "brand") String brand) {
-		return computerService.getComputers(brand);
+	@GetMapping("/getComputerByBrand")
+	public List<ComputerResponseDto> getComputerByBrand(@RequestParam String brand) {
+		return computerService.getComputerByBrand(brand);
+	}
+
+	@GetMapping("/price-range")
+	public List<ComputerResponseDto> getComputersByPriceRange(@RequestParam Double a, @RequestParam Double b) {
+		return computerService.findComputersByPriceRange(a, b);
+	}
+
+	@GetMapping("/pagination")
+	public List<ComputerResponseDto> getComputersPagination(@RequestParam int page, @RequestParam int size) {
+
+		return computerService.getComputersPagination(page, size);
 	}
 }

@@ -2,10 +2,12 @@ package az.developia.spring_project_14Aprel;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ConfigurableApplicationContext;
 
 import az.developia.spring_project_14Aprel.config.AppProperties;
 
+@EnableCaching
 @SpringBootApplication
 public class SpringProject14AprelApplication {
 

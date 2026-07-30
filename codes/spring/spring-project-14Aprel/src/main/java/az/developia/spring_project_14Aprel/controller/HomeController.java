@@ -15,7 +15,7 @@ public class HomeController {
 
 	private Logger log = LoggerFactory.getLogger(HomeController.class);
 
-	@GetMapping("/hello")
+	@GetMapping("/hello")	
 	public String hello() {
 		log.info("Hello endpoint");
 		return "";

@@ -15,19 +15,27 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import jakarta.validation.Valid;
+
 import com.practiceProject.demo.entity.Car;
+import com.practiceProject.demo.requestDto.CarRequestDto;
+import com.practiceProject.demo.responseDto.CarResponseDto;
 import com.practiceProject.demo.service.CarService;
 
+import org.springframework.validation.BindingResult;
+import com.practiceProject.demo.exception.ExceptionClass;
+
 @RestController
-@RequestMapping(path = "/cars")
+@RequestMapping("/cars")
 @CrossOrigin(origins = "*")
 public class CarController {
+
 	@Autowired
 	private CarService carService;
 
 	@GetMapping("/getCars")
-	public List<Car> getCars(@RequestParam(required = false) String name) {
-		return carService.getCars(name);
+	public List<CarResponseDto> getCars(@RequestParam(required = false) String model) {
+		return carService.getCars(model);
 	}
 
 	@GetMapping("/getCar/{id}")
@@ -36,24 +44,34 @@ public class CarController {
 	}
 
 	@PostMapping("/addCar")
-	public String addCar(@RequestBody Car car) {
-		carService.addCar(car);
+	public String addCar(@Valid @RequestBody CarRequestDto dto,
+			BindingResult br) {
+
+		if (br.hasErrors()) {
+			throw new ExceptionClass(br);
+		}
+
+		carService.addCar(dto);
+
 		return "Car added successfully";
 	}
 
 	@DeleteMapping("/deleteCar/{id}")
 	public String deleteCar(@PathVariable int id) {
 		carService.deleteCar(id);
+
 		return "Car deleted successfully";
 	}
 
-	@PutMapping(path = "/update")
-	public String updateCar(@RequestBody Car car) {
-		return carService.updateCar(car);
+	@PutMapping("/update")
+	public String updateCar(@Valid @RequestBody CarRequestDto dto) {
+
+		return carService.updateCar(dto);
 	}
 
-	@GetMapping(path = "getCarByName")
-	public List<Car> getCarByName(@RequestParam(name = "name") String name) {
-		return carService.getCars(name);
+	@GetMapping("/getCarByName")
+	public List<CarResponseDto> getCarByName(@RequestParam String model) {
+
+		return carService.getCars(model);
 	}
 }
