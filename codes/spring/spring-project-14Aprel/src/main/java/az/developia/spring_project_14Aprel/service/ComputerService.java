@@ -4,24 +4,31 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-import az.developia.spring_project_14Aprel.entity.Computer;
-import az.developia.spring_project_14Aprel.repository.ComputerRepo;
-import az.developia.spring_project_14Aprel.requestDto.ComputerRequestDto;
-import az.developia.spring_project_14Aprel.responseDto.ComputerResponseDto;
-
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Service;
+
+import org.modelmapper.ModelMapper;
+
+import az.developia.spring_project_14Aprel.entity.Computer;
+import az.developia.spring_project_14Aprel.entity.User;
+import az.developia.spring_project_14Aprel.repository.ComputerRepo;
+import az.developia.spring_project_14Aprel.repository.UserRepository;
+import az.developia.spring_project_14Aprel.requestDto.ComputerRequestDto;
+import az.developia.spring_project_14Aprel.responseDto.ComputerResponseDto;
 
 @Service
 public class ComputerService {
 
 	@Autowired
 	private ComputerRepo computerRepo;
+
+	@Autowired
+	private UserRepository userRepository;
 
 	@Autowired
 	private ModelMapper modelMapper;
@@ -64,11 +71,21 @@ public class ComputerService {
 
 	public void addComputer(ComputerRequestDto dto) {
 
+		String username = SecurityContextHolder.getContext()
+				.getAuthentication()
+				.getName();
+
+		Optional<User> byUsername = userRepository.findByUsername(username);
+
+		Integer userId = byUsername.get().getId();
+
 		Computer computer = new Computer();
 
 		computer.setBrand(dto.getBrand());
 		computer.setModel(dto.getModel());
 		computer.setPrice(dto.getPrice());
+
+		computer.setUserId(userId);
 
 		computerRepo.save(computer);
 	}
@@ -143,25 +160,25 @@ public class ComputerService {
 	public void setModelMapper(ModelMapper modelMapper) {
 		this.modelMapper = modelMapper;
 	}
-	
+
 	public List<ComputerResponseDto> getComputersPagination(int page, int size) {
 
-	    Pageable pageable = PageRequest.of(page, size);
+		Pageable pageable = PageRequest.of(page, size);
 
-	    Page<Computer> computers = computerRepo.findAll(pageable);
+		Page<Computer> computers = computerRepo.findAll(pageable);
 
-	    List<ComputerResponseDto> result = new ArrayList<>();
+		List<ComputerResponseDto> result = new ArrayList<>();
 
-	    for (Computer computer : computers.getContent()) {
+		for (Computer computer : computers.getContent()) {
 
-	        ComputerResponseDto dto = new ComputerResponseDto(
-	                computer.getId(),
-	                computer.getBrand(),
-	                computer.getModel());
+			ComputerResponseDto dto = new ComputerResponseDto(
+					computer.getId(),
+					computer.getBrand(),
+					computer.getModel());
 
-	        result.add(dto);
-	    }
+			result.add(dto);
+		}
 
-	    return result;
+		return result;
 	}
 }

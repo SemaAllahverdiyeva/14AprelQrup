@@ -1,0 +1,66 @@
+2026-10-15 19:54:58.598 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@37244759: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:54:58.605 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:54:58.608 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:54:58.609 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:03.733 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:03.737 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@7829a725: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:03.739 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:03.764 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:03.764 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:08.875 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:08.875 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@15ebbdf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:08.882 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:08.897 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:08.897 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:14.015 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:14.018 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@44df2e17: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:14.020 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:14.024 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:14.024 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:19.139 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:19.143 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@25103f99: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:19.146 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:19.149 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:19.149 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:24.267 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:24.267 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@30efdb66: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:24.270 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:24.275 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:24.278 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:29.446 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:29.446 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@41f501bf: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:29.452 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:29.460 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:29.461 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:34.594 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:34.594 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@a516579: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:34.597 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:34.606 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:34.606 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:38.260 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-15 19:55:38.262 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-10-15 19:55:38.352 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 89 ms
+2026-10-15 19:55:39.734 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:39.735 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@34220b5b: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:39.766 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:39.785 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:39.785 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:44.957 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:44.957 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@4fa96301: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:44.960 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:44.965 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:44.965 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:50.082 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:50.083 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@6125e6ba: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:50.088 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:50.093 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:50.096 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:55.193 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:55:55.193 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@7e9fab55: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:55:55.195 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:55:55.199 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).
+2026-10-15 19:55:55.199 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:56:00.398 WARN  o.s.a.r.l.SimpleMessageListenerContainer - Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection refused: getsockopt
+2026-10-15 19:56:00.398 INFO  o.s.a.r.l.SimpleMessageListenerContainer - Restarting Consumer@3325dab9: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2026-10-15 19:56:00.431 INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+2026-10-15 19:56:00.437 ERROR o.s.a.r.l.SimpleMessageListenerContainer - Failed to check/redeclare auto-delete queue(s).

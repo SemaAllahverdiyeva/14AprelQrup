@@ -29,9 +29,8 @@ public class Computer {
 	private String model;
 	private Double price;
 
-	@ManyToOne(fetch = FetchType.EAGER)
-	private User user;
-	
+	private Integer userId;
+
 	@OneToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "specification_id")
 	private Specification specification;
