@@ -1,6 +1,5 @@
 package com.example.userservice.service;
 
-import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -34,7 +33,7 @@ public class UserService {
                 .orElseThrow(() ->
                         new RuntimeException("User not found: " + userId));
 
-        String url = "http://localhost:8081/computers/user/" + userId;
+        String url = "http://computer-service/computers/user/" + userId;
 
         ResponseEntity<ComputerListResponseDto> response =
                 restTemplate.exchange(
