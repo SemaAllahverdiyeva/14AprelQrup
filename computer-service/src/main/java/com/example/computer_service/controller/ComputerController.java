@@ -1,7 +1,9 @@
 package com.example.computer_service.controller;
 
+import com.example.computer_service.entity.Computer;
 import com.example.computer_service.response.ComputerListResponse;
 import com.example.computer_service.service.ComputerService;
+
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -19,5 +21,10 @@ public class ComputerController {
             @PathVariable Long userId) {
 
         return computerService.getComputersByUserId(userId);
+    }
+
+    @PostMapping
+    public Computer createComputer(@RequestBody Computer computer) {
+        return computerService.createComputer(computer);
     }
 }

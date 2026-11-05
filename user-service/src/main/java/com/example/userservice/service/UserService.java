@@ -1,9 +1,6 @@
 package com.example.userservice.service;
 
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
 
 import com.example.user_service.entity.User;
 import com.example.user_service.repository.UserRepository;
@@ -15,12 +12,14 @@ import java.util.List;
 public class UserService {
 
     private final UserRepository userRepository;
-    private final RestTemplate restTemplate;
+    private final ComputerClient computerClient;
 
-    public UserService(UserRepository userRepository,
-                       RestTemplate restTemplate) {
+    public UserService(
+            UserRepository userRepository,
+            ComputerClient computerClient) {
+
         this.userRepository = userRepository;
-        this.restTemplate = restTemplate;
+        this.computerClient = computerClient;
     }
 
     public List<User> getAllUsers() {
@@ -33,26 +32,9 @@ public class UserService {
                 .orElseThrow(() ->
                         new RuntimeException("User not found: " + userId));
 
-        String url = "http://computer-service/computers/user/" + userId;
-
-        ResponseEntity<ComputerListResponseDto> response =
-                restTemplate.exchange(
-                        url,
-                        HttpMethod.GET,
-                        null,
-                        ComputerListResponseDto.class
-                );
-
         List<UserComputerResponse.ComputerDto> computers =
-                response.getBody() == null
-                        ? List.of()
-                        : response.getBody().getComputers();
+                computerClient.getComputersByUserId(userId);
 
         return new UserComputerResponse(user, computers);
-    }
-
-    @lombok.Data
-    public static class ComputerListResponseDto {
-        private List<UserComputerResponse.ComputerDto> computers;
     }
 }
